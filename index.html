@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      /* Smooth scroll behavior for the image container */
+      .scroll-smooth {
+        scroll-behavior: smooth;
+      }
+    </style>
+</head>
+<body class="m-0 font-sans">
+    <header>
+        <!-- nav bar -->
+        <nav class=" border-red-500 ">
+       <div class="  h-14 bg-black flex">
+        <img class="h-9 w-24 mt-4 ml-5" src="amazon-logo-black-background-xb9pdemosnjfz9ej.jfif" alt=""> 
+
+        <div class=" text-white ml-8 leading-tight  mt-2  h-14 w-56 ">
+            <p class="text-xs text-gray-400 ml-6 font-semibold ">Delivering to Delhi 110001</p>
+            <h1 class="font-semibold text-"><i class="fa-solid fa-location-dot"></i>Update Location</h1>
+        </div>  
+
+        <div class="   mt-2 ml-8 border-red-500 h-10 w-[600px] flex ">
+         <div class=" rounded-tl-md rounded-bl-md h-10 w-14 bg-gray-300">
+            <div class="relative">
+                <!-- Dropdown Button -->
+                <button id="dropdownButton" class=" flex bg--600 text-sm px-4 py-2 rounded-md">
+                  ALL<i class="fa-solid fa-caret-down mt-0 text-sm"></i>
+                </button>
+            
+                <!-- Dropdown Menu -->
+                <div id="dropdownMenu" class="hidden absolute mt-2 w-48 bg-white shadow-md rounded-md leading-4">
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">All catagories</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Alexa Skills</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Amazon Devices</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Amazon Fasion </a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Amazon Fresh</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Amazon Fresh Meat</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Amazon Pharmacy</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Appliance</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Apps&Games</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Audiable AudioBooks</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Baby</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Beauty</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Books </a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Cars&Motarbikes</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Clothing&Accessories</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Collections</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Computers</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Deals</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Electronics</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Furniture</a>
+                </div>
+              </div>
+            
+              <!-- JavaScript for Toggle -->
+              <script>
+                const dropdownButton = document.getElementById('dropdownButton');
+                const dropdownMenu = document.getElementById('dropdownMenu');
+            
+                dropdownButton.addEventListener('click', () => {
+                  dropdownMenu.classList.toggle('hidden');
+                });
+            
+                // Optional: Hide the dropdown when clicking outside
+                window.addEventListener('click', (e) => {
+                  if (!dropdownButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.add('hidden');
+                  }
+                });
+              </script>
+            
+            
+         </div>
+       
+         <div class="h-10 w-[500px] bg-white">
+        <p class="opacity-50 mt-2 font-semibold ml-2">Search Amazon.in</p>
+         </div>
+         <div class="rounded-tr-md rounded-br-md h-10 w-12 bg-yellow-500">
+            <i class="fa-solid fa-magnifying-glass text-3xl text-xl opacity-65 p-2"></i>
+         </div>
+
+         <div class=" flex text-white ">
+         <img class="h-8 w-8 ml-4 mt-2" src="indian flag.jpg " alt="">
+         <h1 class="flex mt-2 font-semibold">EN <i class="fa-solid fa-caret-down ml-1 text-xs text-gray-400 mt-2 "></i></h1>
+         </div>
+        </div>
+
+        <div class=" ml-8 border-green-700 h-14 w-40 leading-3">
+            <p class="text-gray-200 text-sm font-semibold mt-2">Hello, sign in</p>
+            <p class="text-white text-base font-medium -mt-2">Account & Lists <i class="fa-solid fa-caret-down ml-1 text-xs text-gray-400 mt-2 "></i></p>
+           </div>
+
+        <div class=" border-green-700 h-14 w-36 ml-6 leading-3 ml-12">
+            <p class="text-gray-200 text-sm font-semibold mt-2">Return</p>
+            <p class="text-white text-base font-medium -mt-2">& order <i class="fa-solid fa-caret-down ml-1 text-xs text-gray-400 mt-2 "></i></p>
+           </div>
+
+           <div class="">
+            <i class="fa-solid fa-cart-shopping text-white  text-xl p-4 ml-4"></i>
+           </div>
+</div>
+        </nav>
+
+        <!-- Navigation bar  -->
+
+     <div class="  flex h-10 w-full -4 border-red-600 bg-gray-600">
+     <div class="flex text-sm  border-red-600 w-[1000px]  justify-between ">
+        <h1 class="text-medium text-white text-lg p-1 px-4"><i class="fa-solid fa-bars"></i> ALL</h1>
+     <h1 class="p-1 mt-1 text-white">Fresh <i class="fa-solid fa-caret-down text-gray-400 "></i></h1>
+     <h1 class="p-1 mt-1 text-white">MX Player </h1>
+     <h1 class="p-1 mt-1 text-white">Sell </h1>
+     <h1 class="p-1 mt-1 text-white">Best Sellers </h1>
+     <h1 class="p-1 mt-1 text-white">Today's Deals  </h1>
+     <h1 class="p-1 mt-1 text-white">Mobile</h1>
+     <h1 class="p-1 mt-1 text-white">Prime <i class="fa-solid fa-caret-down text-gray-400 "></i></h1>
+     <h1 class="p-1 mt-1 text-white">Cutomer Service </h1>
+     <h1 class="p-1 mt-1 text-white">Electronics </h1>
+     <h1 class="p-1 mt-1 text-white">Home&Kitchen</h1>
+     </div>
+     <div class=" ">
+        <img class="h-10" src="live now img.jpg" alt="">
+     </div>
+     </div>
+
+       <!-- add section -->
+<div class="w-full ">
+       <img src="FDFO_bank_PC_Header_1500x30055.gif" alt="">
+       <img class="" src="NewUnrec_NTA_PC.gif" alt="">
+    </div>
+      
+    </header>
+
+    <!-- hero section -->
+    <div class="container mx-auto mt-2">
+
+
+    <div>
+      <div >
+        <img class="w-full" src="SBI Logo.jpg" alt="">
+        <img src="hero section Easy.jpg" alt="">
+      </div>
+    </div>
+    </div>
+
+ <!-- hero section 2   -->
+    <div class="bg-yellow-400 bg-opacity-70 h-96">
+    <div id="" class="">
+      <h1 class="text-2xl font-bold">Brands in focus deals
+       <span class="underline ml-2 text-base font-light">See more</span></h1>
+    </div>
+    <div class="relative w-full">
+      <!-- Scroll Button Left -->
+      <button id="scrollLeft" class="absolute left-0 bg-gray-500   text-white px-4 py-2 top-1/2 transform -translate-y-1/2 z-10">‹</button>
+      
+      <!-- Image container 1 -->
+      <div id="imageContainer" class="flex overflow-x-auto scroll-smooth space-x-4">
+        <div class="flex">
+       <div class=" border-red-500 h-72 w-56 mt-8 bg-white">
+       <img src="img-1.jpg" alt="">
+       <div class="flex">
+        <button class="bg-red-700 p-1 text-white">50%off</button>
+        <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+       </div>
+       <h1 class="mt-1">₹74,999 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹1,49,999.00</strike></span></h1>
+       <h1 class="text-xs">Samsung Galaxy S23 Ultra 5G AI S....</h1>
+       </div>
+      </div>
+      
+       <div class=" border-red-500 h-72 w-56 mt-8 bg-white">
+       <img src="img-2.jpg" alt="">
+       <div class="flex">
+        <button class="bg-red-700 p-1 text-white">29%off</button>
+        <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+       </div>
+       <h1 class="mt-1">₹11,999 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹16,999.00</strike></span></h1>
+       <h1 class="text-xs">Samsung Galaxy M15  5G Prime S....</h1>
+       </div>
+
+       <div class=" border-red-500 h-72 w-56 mt-8 bg-white">
+       <img src="img-3.jpg" alt="">
+       <div class="flex">
+        <button class="bg-red-700 p-1 text-white">31%off</button>
+        <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+       </div>
+       <h1 class="mt-1">₹19,999 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹28,999.00</strike></span></h1>
+       <h1 class="text-xs">Samsung Galaxy M55s  5G AI (Coral....</h1>
+       </div>
+
+       <div class=" border-red-500 h-72 w-56 mt-8 bg-white">
+       <img src="img-4.jpg" alt="">
+       <div class="flex">
+        <button class="bg-red-700 p-1 text-white">42%off</button>
+        <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+       </div>
+       <h1 class="mt-1">28,990 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹49,999.00</strike></span></h1>
+       <h1 class="text-xs">Samsung 108cm (43 inches) D Se....</h1>
+       </div>
+       
+       <div class=" border-red-500 h-72 w-56 mt-8 bg-white">
+       <img src="img-5.jpg" alt="">
+       <div class="flex">
+        <button class="bg-red-700 p-1 text-white">45%off</button>
+        <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+       </div>
+       <h1 class="mt-1">₹54,990 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹99,999.00</strike></span></h1>
+       <h1 class="text-xs">Sony Bravia 139cm  (55 inches) 4k....</h1>
+       </div>
+
+       <div class=" border-red-500 h-72 w-56 mt-8 bg-white">
+       <img src="img-6.jpg" alt="">
+       <div class="flex">
+        <button class="bg-red-700 p-1 text-white">16%off</button>
+        <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+       </div>
+       <h1 class="mt-1">₹28,999 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹49,999,.00</strike></span></h1>
+       <h1 class="text-xs">Samsung Galaxy S23 Ultra 5G AI S....</h1>
+       </div>
+
+      </div>
+   
+      
+      <!-- Scroll Button Right -->
+      <button id="scrollRight" class="absolute right-0 bg-gray-500 text-white px-4 py-2 top-1/2 transform -translate-y-1/2 z-10">›</button>
+    </div>
+    <script>
+      // JavaScript to control the scrolling
+      const container = document.getElementById('imageContainer');
+      const scrollRight = document.getElementById('scrollRight');
+      const scrollLeft = document.getElementById('scrollLeft');
+  
+      // Scroll right by the width of one image
+      scrollRight.addEventListener('click', () => {
+        container.scrollBy({ left: 150, behavior: 'smooth' });
+      });
+  
+      // Scroll left by the width of one image
+      scrollLeft.addEventListener('click', () => {
+        container.scrollBy({ left: -150, behavior: 'smooth' });
+      });
+    </script>
+    </div>
+
+    <!-- scrolling section -->
+     <section class="container  mx-auto">
+     <!-- Image container 2 -->
+     <div id="imageContainer" class="flex overflow-x-auto scroll-smooth space-x-4">
+      <div class="flex">
+     <div class=" border-red-500 h-72 w-56 mt-8 bg-white">
+     <img src="img-7.jpg" alt="">
+     <div class="flex">
+      <button class="bg-red-700 p-1 text-white">50%off</button>
+      <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+     </div>
+     <h1 class="mt-1">₹74,999 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹1,49,999.00</strike></span></h1>
+     <h1 class="text-xs">Samsung Galaxy S23 Ultra 5G AI S....</h1>
+     </div>
+    </div>
+    
+     <div class=" border-red-500 h-72 w-56 mt-8 bg-white">
+     <img src="img-9.jpg" alt="">
+     <div class="flex">
+      <button class="bg-red-700 p-1 text-white">29%off</button>
+      <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+     </div>
+     <h1 class="mt-1">₹11,999 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹16,999.00</strike></span></h1>
+     <h1 class="text-xs">Samsung Galaxy M15  5G Prime S....</h1>
+     </div>
+
+     <div class=" border-red-500 h-72 w-56 mt-8 bg-white">
+     <img src="img-10.jpg" alt="">
+     <div class="flex">
+      <button class="bg-red-700 p-1 text-white">31%off</button>
+      <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+     </div>
+     <h1 class="mt-1">₹19,999 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹28,999.00</strike></span></h1>
+     <h1 class="text-xs">Samsung Galaxy M55s  5G AI (Coral....</h1>
+     </div>
+
+     <div class=" border-red-500 h-72 w-56 mt-8 bg-white">
+     <img src="img-11.jpg" alt="">
+     <div class="flex">
+      <button class="bg-red-700 p-1 text-white">42%off</button>
+      <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+     </div>
+     <h1 class="mt-1">28,990 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹49,999.00</strike></span></h1>
+     <h1 class="text-xs">Samsung 108cm (43 inches) D Se....</h1>
+     </div>
+     
+     <div class=" border-red-500 h-72 w-56 mt-8 bg-white"> 
+      <div class="border h-10 w-full">
+        
+      </div>
+     <img src="img-12.jpg" alt="">
+     <div class="flex">
+      <button class="bg-red-700 p-1 text-white">45%off</button>
+      <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+     </div>
+     <h1 class="mt-1">₹54,990 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹99,999.00</strike></span></h1>
+     <h1 class="text-xs">Sony Bravia 139cm  (55 inches) 4k....</h1>
+     </div>
+
+     <div class=" border-red-500 h-72 w-56 mt-8 bg-white">
+     <img src="img-13.jpg" alt="">
+     <div class="flex">
+      <button class="bg-red-700 p-1 text-white">16%off</button>
+      <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+     </div>
+     <h1 class="mt-1">₹28,999 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹49,999,.00</strike></span></h1>
+     <h1 class="text-xs">Samsung Galaxy S23 Ultra 5G AI S....</h1>
+     </div>
+
+    </div>
+ 
+     </section>
+     <!-- img section -->
+    <section>
+      <!-- Image container 3 -->
+      <div id="imageContainer" class="flex overflow-x-auto scroll-smooth space-x-4">
+        <div class="flex">
+       <div class=" border-red-500 h-72 w-56 mt-8 bg-white">
+       <img src="img-13.jpg" alt="">
+       <div class="flex">
+        <button class="bg-red-700 p-1 text-white">50%off</button>
+        <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+       </div>
+       <h1 class="mt-1">₹74,999 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹1,49,999.00</strike></span></h1>
+       <h1 class="text-xs">Samsung Galaxy S23 Ultra 5G AI S....</h1>
+       </div>
+      </div>
+      
+       <div class=" border-red-500 h-72 w-56 mt-8 bg-white">
+       <img src="img-14.jpg" alt="">
+       <div class="flex">
+        <button class="bg-red-700 p-1 text-white">29%off</button>
+        <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+       </div>
+       <h1 class="mt-1">₹11,999 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹16,999.00</strike></span></h1>
+       <h1 class="text-xs">Samsung Galaxy M15  5G Prime S....</h1>
+       </div>
+
+       <div class=" border-red-500 h-72 w-56 mt-8 bg-white">
+       <img src="img-15.jpg" alt="">
+       <div class="flex">
+        <button class="bg-red-700 p-1 text-white">31%off</button>
+        <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+       </div>
+       <h1 class="mt-1">₹19,999 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹28,999.00</strike></span></h1>
+       <h1 class="text-xs">Samsung Galaxy M55s  5G AI (Coral....</h1>
+       </div>
+
+       <div class=" border-red-500 h-72 w-56 mt-8 bg-white">
+       <img src="mg-16.jpg" alt="">
+       <div class="flex">
+        <button class="bg-red-700 p-1 text-white">42%off</button>
+        <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+       </div>
+       <h1 class="mt-1">28,990 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹49,999.00</strike></span></h1>
+       <h1 class="text-xs">Samsung 108cm (43 inches) D Se....</h1>
+       </div>
+       
+       <div class=" border-red-500 h-72 w-56 mt-8 bg-white">
+       <img src="img-17.jpg" alt="">
+       <div class="flex">
+        <button class="bg-red-700 p-1 text-white">45%off</button>
+        <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+       </div>
+       <h1 class="mt-1">₹54,990 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹99,999.00</strike></span></h1>
+       <h1 class="text-xs">Sony Bravia 139cm  (55 inches) 4k....</h1>
+       </div>
+
+       <div class=" border-red-500 h-72 w-56 mt-8 bg-white">
+       <img src="img-18.jpg" alt="">
+       <div class="flex">
+        <button class="bg-red-700 p-1 text-white">16%off</button>
+        <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+       </div>
+       <h1 class="mt-1">₹28,999 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹49,999,.00</strike></span></h1>
+       <h1 class="text-xs">Samsung Galaxy S23 Ultra 5G AI S....</h1>
+       </div>
+
+      </div>
+   
+    </section>
+    <!-- img section 3 -->
+     <section>
+      <!-- Image container  4-->
+      <div id="imageContainer" class="flex overflow-x-auto scroll-smooth space-x-4">
+        <div class="flex">
+       <div class=" border-red-500 h-72 w-56 mt-8 bg-white">
+       <img src="img-1.jpg" alt="">
+       <div class="flex">
+        <button class="bg-red-700 p-1 text-white">50%off</button>
+        <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+       </div>
+       <h1 class="mt-1">₹74,999 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹1,49,999.00</strike></span></h1>
+       <h1 class="text-xs">Samsung Galaxy S23 Ultra 5G AI S....</h1>
+       </div>
+      </div>
+      
+       <div class=" border-red-500 h-72 w-56 mt-8 bg-white">
+       <img src="img-2.jpg" alt="">
+       <div class="flex">
+        <button class="bg-red-700 p-1 text-white">29%off</button>
+        <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+       </div>
+       <h1 class="mt-1">₹11,999 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹16,999.00</strike></span></h1>
+       <h1 class="text-xs">Samsung Galaxy M15  5G Prime S....</h1>
+       </div>
+
+       <div class=" border-red-500 h-72 w-56 mt-8 bg-white">
+       <img src="img-3.jpg" alt="">
+       <div class="flex">
+        <button class="bg-red-700 p-1 text-white">31%off</button>
+        <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+       </div>
+       <h1 class="mt-1">₹19,999 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹28,999.00</strike></span></h1>
+       <h1 class="text-xs">Samsung Galaxy M55s  5G AI (Coral....</h1>
+       </div>
+
+       <div class=" border-red-500 h-72 w-56 mt-8 bg-white">
+       <img src="img-4.jpg" alt="">
+       <div class="flex">
+        <button class="bg-red-700 p-1 text-white">42%off</button>
+        <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+       </div>
+       <h1 class="mt-1">28,990 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹49,999.00</strike></span></h1>
+       <h1 class="text-xs">Samsung 108cm (43 inches) D Se....</h1>
+       </div>
+       
+       <div class=" border-red-500 h-72 w-56 mt-8 bg-white">
+       <img src="img-5.jpg" alt="">
+       <div class="flex">
+        <button class="bg-red-700 p-1 text-white">45%off</button>
+        <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+       </div>
+       <h1 class="mt-1">₹54,990 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹99,999.00</strike></span></h1>
+       <h1 class="text-xs">Sony Bravia 139cm  (55 inches) 4k....</h1>
+       </div>
+
+       <div class=" border-red-500 h-72 w-56 mt-8 bg-white">
+       <img src="img-6.jpg" alt="">
+       <div class="flex">
+        <button class="bg-red-700 p-1 text-white">16%off</button>
+        <p class="text-xs mt-4 ml-2 text-red-700 font-bold">Great Indian Festivel</p>
+       </div>
+       <h1 class="mt-1">₹28,999 <sup class="bg-gray-300 text-xs">00</sup><span class="text-xs ml-2">M.R.P: <strike class="text-xs">₹49,999,.00</strike></span></h1>
+       <h1 class="text-xs">Samsung Galaxy S23 Ultra 5G AI S....</h1>
+       </div>
+
+      </div>
+   
+     </section>
+
+     <!-- Footer section  -->
+
+     <footer class="bg-gray-900 h-[800px] w-full ">
+
+      <div class="h-10 w-full bg-gray-500 ">
+        <h1 class=" text-center text-white mt-8 text-sm" >Back to top</h1>
+      </div>
+      <!-- footer two -->
+      <div class="flex justify-between container mx-auto w-[1000px] mt-24">
+        <div class="leading-loose">
+          <h1 class="text-white font-bold text-base">Get to  Know <br>Us </h1>
+         <div class="text-white text-sm leading-8">
+          <p class="hover:underline">About Amazon</p>
+          <p class="hover:underline">Careers</p>
+          <p class="hover:underline">Press Releases</p>
+          <p class="hover:underline">Amazon   Sciene</p>
+         </div>
+        </div>
+
+        <div class="">
+          <div class="leading-loose">
+            <h1 class="text-white font-bold text-base">Contact with <br>Us </h1>
+           <div class="text-white text-sm leading-8">
+            <p class="hover:underline">Face Book</p>
+            <p class="hover:underline">Twitter</p>
+            <p class="hover:underline">Indtagram Releases</p>
+           </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="leading-loose">
+            <h1 class="text-white font-bold text-base">Make money with Us </h1>
+           <div class="text-gray-200 text-sm leading-8">
+            <p class="hover:underline"> Sell On Amazon</p>
+            <p class="hover:underline">sell Under Amazon <br> Accelerator/p>
+            <p class="hover:underline">Product and build your Brand </p>
+            <p class="hover:underline">Supply to Amazon</p>
+            <p class="hover:underline">Become an Affiliate</p>
+            <p class="hover:underline">Fulfillment with Amazon</p>
+            <p class="hover:underline">Advertice with Amazon</p>
+            <p class="hover:underline">Amazon pay on Merchats</p>
+           </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="leading-loose">
+            <h1 class="text-white font-bold text-base ">Let Us Help You </h1>
+           <div class="text-white text-sm leading-8">
+            <p class="hover:underline">About Amazon</p>
+            <p class="hover:underline">Careers</p>
+            <p class="hover:underline">Press Releases</p>
+            <p class="hover:underline">Amazon   Sciene</p>
+           </div>
+          </div> 
+        </div>
+      </div>   <hr class="mt-16 opacity-60 ">
+     <!-- footer three -->
+      <div class="h-28  w-full bg-gray-900 flex space-x-12 ">
+        <div class="ml-96 mt-10 flex space-x-8">
+<img src="amazon-logo-black-background-xb9pdemosnjfz9ej.jfif" alt="" class=" h-12 w-28 items-center">
+<div class="h-8 w-36 bg-gray-900 border ">  
+<i class="fa-solid fa-globe text-white">&nbsp;&nbsp;<span class="text-sm">English</span></i>
+
+<h1 class="text-white"></h1>
+</div> 
+<div class="border h-8 w-28 flex">
+  <img src="indian flag.jpg" alt="" class="h-7 w-7">
+  <h1  class="text-white text-sm opacity-75 ml-4 mt-1">India</h1>
+</div>
+</div>
+      </div>
+<!-- footer section three -->
+<div class="bg-gray-950 h-52 mt-12">
+<div class="flex w-[800px] justify-between ml-60">
+  <div class="leading-10 mt-8">
+    <h1 class="text-white text-xs hover:underline">AbeBook</h1>
+    <p class="text-gray-400 text-xs hover:underline">Books,art</p>
+    <p class="text-gray-400 text-xs hover:underline">& collectibles</p>
+  </div>
+  <div class="leading-10 mt-8">
+    <h1 class="text-white text-xs hover:underline">Amezon Web Service</h1>
+    <p class="text-gray-400 text-xs hover:underline">Scalable Cloud</p>
+    <p class="text-gray-400 text-xs hover:underline">Computing Service/p>
+  </div>
+  <div class="leading-10 mt-8">
+    <h1 class="text-white text-xs hover:underline">Audiable</h1>
+    <p class="text-gray-400 text-xs hover:underline">Download</p>
+    <p class="text-gray-400 text-xs hover:underline"> Audio Books</p>
+  </div>
+  <div class="leading-10 mt-8">
+    <h1 class="text-white text-xs hover:underline ">IMDb</h1>
+    <p class="text-gray-400 text-xs hover:underline">Movies,TV</p>
+    <p class="text-gray-400 text-xs hover:underline">& Celibrities</p>
+  </div>
+ 
+</div>
+<!-- div2 -->
+<div class="flex mt-10">
+  <div class="flex w-[800px] justify-between ml-60 ">
+    <div class="leading-10 ">
+      <h1 class="text-white text-xs hover:underline ">Shopbop</h1>
+      <p class="text-gray-400 text-xs hover:underline">Designer</p>
+      <p class="text-gray-400 text-xs hover:underline">Fashion Brands</p>
+    </div>
+    <div class="leading-10 ml-20">
+      <h1 class="text-white text-xs hover:underline">Amazon Business</h1>
+      <p class="text-gray-400 text-xs hover:underline">Everything For</p>
+      <p class="text-gray-400 text-xs hover:underline">Your Business</p>
+    </div>
+    <div class="leading-10 ml-12">
+      <h1 class="text-white text-xs hover:underline">Prime Now</h1>
+      <p class="text-gray-400 text-xs hover:underline">2-Hour Delivery</p>
+      <p class="text-gray-400 text-xs hover:underline">On Everyday item </p>
+    </div>
+    <div class="leading-10">
+      <h1 class="text-white text-xs hover:underline">Amazon Prime Music</h1>
+      <p class="text-gray-400 text-xs hover:underline">100 Million songs, ad-free</p>
+      <p class="text-gray-400 text-xs hover:underline">Over 15 million podcost episode </p>
+    </div>
+</div>
+</div>
+
+     </footer>
+</body>
+</html>
